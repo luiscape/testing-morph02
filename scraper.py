@@ -17,6 +17,4 @@ for tr in root.cssselect("div[align='left'] tr"):
         }
         print data
 
-return data
-
 scraperwiki.sqlite.save(unique_keys=['ID', 'Month', 'Day', 'Year', 'Country', 'UN', 'INGO'], data=data)
